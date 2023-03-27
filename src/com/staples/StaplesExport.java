@@ -29,7 +29,7 @@ public class StaplesExport {
         for (Element product : products) {
             String name = product.select("[href],[sctype],[onclick]").text();
             String price = product.select("div.pricing-wrap").text();
-            String sku = product.attr("[data-sku]");
+            String sku = product.select("[data-sku]").text();
             String model = product.attr("[data-part-number]");
             String category = product.select(".d-inline").text();
             String description = product.select(".card-text").text();
