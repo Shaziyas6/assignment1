@@ -1,4 +1,4 @@
-package com.staples;
+package com.quill;
 
 public class Product {
 	  String name;
